@@ -1,0 +1,80 @@
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-areas: 
+    "menu menu menu menu menu menu menu menu menu menu menu menu"
+    "cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+body{
+    overflow-x: hidden;
+}
+
+/*@media only screen and (max-width:1200px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-areas: 
+        "aside aside aside menu menu menu menu menu menu menu menu menu"
+        "cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+}*/
+.menu{
+    grid-column-start: menu;
+    grid-column-end: menu;
+}
+
+.cuerpo{
+    grid-column-start: cuerpo;
+    grid-column-end: cuerpo;
+}
+/*.cuerpo:before{
+    content: "";
+    width: 168vh;
+    height: 112vh;
+    position: absolute;
+    background:hsla(295, 100%, 77%, 0.374);
+}*/
+/*.aside{
+    grid-column-start: aside;
+    grid-column-end: aside;
+    grid-row: aside;
+    width: 50vh;
+}*/
+/*.cuerpo{
+    background-image: url(PAGINA_CONTABILIDAD/img/CONTA.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}*/
+
+.titulo{
+    font-family: fantasy;
+    font-size: 28pt;
+    color: white;
+    font-weight: normal;
+    text-decoration: underline overline;
+    text-decoration-color: rgb(249, 8, 181);
+    text-align: center;
+
+}
+
+.titulo1{
+    font-size: 12pt;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+}
+
+.footer{
+    background-color: rgb(204, 157, 234);
+    grid-column-start: footer;
+    grid-column-end: footer;
+}
+
+.texto{
+    text-align: justify !important;
+}
+
